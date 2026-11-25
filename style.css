@@ -1,0 +1,46 @@
+/* Palet Warna Harmonis (Warm Alabaster, Deep Slate Navy, Sage Green & Muted Sand) */
+:root {
+  --bg-primary: #FAF9F6;
+  --bg-surface: #FFFFFF;
+  --bg-accent-soft: #EFECE6;
+  --text-primary: #1E293B;
+  --text-secondary: #475569;
+  --accent-sage: #4A6B5D;
+  --accent-terracotta: #C27D56;
+  --border-subtle: #E2E8F0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.glass-nav {
+  background: rgba(250, 249, 246, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.card-hover {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px -8px rgba(30, 41, 59, 0.08);
+  border-color: #CBD5E1;
+}
+
+/* Status tombol filter proyek aktif */
+.filter-btn.active {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+}
